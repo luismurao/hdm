@@ -27,7 +27,7 @@ sp_temporal_data <- function(occs=NA,longitude=NULL,latitude=NULL,sp_year_var=NA
     }
     if(sp_year_var %in% names(occs)){
       # Species year data
-      years_in_occs <- as.numeric(occs[,sp_year_var])
+      years_in_occs <- as.numeric(as.character(occs[,sp_year_var]))
       years_in_occs_index <- which(!is.na(years_in_occs))
       years_sps <- unique(years_in_occs[years_in_occs_index])
       # environmental layers by year
