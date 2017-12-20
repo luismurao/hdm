@@ -1,12 +1,3 @@
----
-title: "hdm"
-output: github_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Description
 
 `hdm` is package to build temporal species distribution models. `hdm` uses temporal environmental information to model the niche as an n-dimensional Minimum Volume Ellipsoid. 
