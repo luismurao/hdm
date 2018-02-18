@@ -1,7 +1,7 @@
 Package: hdm
 Type: Package
 Title: hdm: "Habitat distribution models"
-Version: 0.1.0
+Version: 0.1.5
 Author: Luis Osorio-Olvera, Mariana Munguia
 Maintainer: Luis Osorio-Olvera <luismurao@gmail.com>
 Description: Habitat-temporal distribution models.
