@@ -27,7 +27,17 @@ temporal_projection <- function(this.species,
 
 
   if(!dir.exists(to_save_dir)) dir.create(to_save_dir)
-  print(to_save_dir)
+#  print(to_save_dir)
+  metadata_dir <- file.path(to_save_dir,
+                            "ellipsoid_metadata")
+  if(!dir.exists(metadata_dir)) dir.create(metadata_dir)
+
+  # Save ellipsoid metadata
+  ellipsoid_metadatafile <-  file.path(metadata_dir,
+                                        paste0(sp_name,
+                                               "_ellip_metadata.txt"))
+
+  capture.output(ellip ,file = ellipsoid_metadatafile)
 
   proyections <- lapply(projection_years,function(x){
 
